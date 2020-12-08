@@ -3,9 +3,9 @@
 This project was created using react
 
 ## TODO:
-* Create header nav bar
-* Write footer
-* Format the above lightly
+* Create header nav bar -- DONE
+* Write footer -- DONE
+* Format the above lightly -- DONE
 * Build page for a single level based on mock json data
 * Create deeper json data for more levels
 * Style the existing pages a bit more
