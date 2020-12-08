@@ -5,6 +5,7 @@ function LevelList() {
   let all_levels = json_data['levels'];
   return (
     <section id='level-list' className='Level-List Container'>
+      <h1>All Levels:</h1>
       <ul>
         {
           all_levels.map((level, index) => {

@@ -5,6 +5,7 @@ function TechList() {
   let all_tech = json_data['techs'];
   return (
     <section id='tech-list' className='Tech-List Container'>
+      <h1>All Techniques:</h1>
       <ul>
         {
           all_tech.map((tech, index) => {

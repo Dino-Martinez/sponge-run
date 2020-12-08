@@ -1,8 +1,8 @@
 .Footer {
-  padding-top: var(--template-padding-y);
-  padding-bottom: var(--template-padding-y);
-  padding-left: var(--template-padding-x);
-  padding-right: var(--template-padding-x);
+  padding-top: var(--footer-padding-y);
+  padding-bottom: var(--footer-padding-y);
+  padding-left: var(--nav-padding-x);
+  padding-right: var(--nav-padding-x);
   background: var(--theme-nav-background);
   color: var(--theme-nav-text);
   text-align: center;
