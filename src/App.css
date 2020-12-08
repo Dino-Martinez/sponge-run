@@ -1,6 +1,7 @@
 :root {
   --theme-nav-background: #333;
   --theme-nav-text: #ddd;
+  --theme-nav-active: #fff;
   --theme-main-background: #F7FFFE;
   --theme-main-text: #333;
   --template-padding-x: 24px;
@@ -23,41 +24,16 @@ body {
   margin-bottom: var(--container-margin-y);
 }
 
-.App {
-  text-align: center;
+.Nav-Link {
+  text-decoration: none;
+  color: var(--theme-nav-text);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Nav-Link:hover {
+  color: var(--theme-nav-active);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Nav-Link-active {
+  font-weight: bold;
+  color:var(--theme-nav-active);
 }

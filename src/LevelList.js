@@ -4,7 +4,7 @@ const json_data = require('./data.json');
 function LevelList() {
   let all_levels = json_data['levels'];
   return (
-    <section id='level-list' className='Level-List'>
+    <section id='level-list' className='Level-List Container'>
       <ul>
         {
           all_levels.map((level, index) => {
