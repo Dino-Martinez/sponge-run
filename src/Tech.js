@@ -9,17 +9,20 @@ function Tech(props) {
       tech = item;
     }
   });
+  const image_visibility = tech.banner_url.includes('via.placeholder') ? 'block' : 'none';
+  const video_visibility = !tech.banner_url.includes('via.placeholder') ? 'block' : 'none';
   return (
     <div>
-      <section class='Container'>
-        <img class='Banner' src={tech.banner_url} alt='Banner for this technique.'/>
+      <section className='Container'>
+        <img className='Banner' src={tech.banner_url} alt='Banner for this technique.'/>
       </section>
       <section className='Container'>
         <h1>{tech.name}</h1>
         <p>{tech.description}</p>
-        <video autoplay="autoplay" loop muted className='Tech-Tutorial' alt='Tutorial gif for this technique.'>
+        <video style={{display: video_visibility}} autoPlay="autoplay" loop muted className='Tech-Tutorial' alt='Tutorial gif for this technique.'>
           <source src={tech.tutorial_url} type='video/mp4'/>
         </video>
+        <img style={{display: image_visibility}} src={tech.tutorial_url} alt='No video provided, here is a placeholder'/>
       </section>
     </div>
   )
