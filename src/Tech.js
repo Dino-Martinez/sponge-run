@@ -1,4 +1,3 @@
-import {Link} from 'react-router-dom';
 const json_data = require('./data.json');
 
 function Tech(props) {
@@ -11,12 +10,18 @@ function Tech(props) {
     }
   });
   return (
-    <section className='Container'>
-      <img src={tech.banner_url}/>
-      <h1>{tech.name}</h1>
-      <p>{tech.description}</p>
-      <img src={tech.tutorial_url}/>
-    </section>
+    <div>
+      <section class='Container'>
+        <img class='Banner' src='https://i.imgur.com/EfJ5eO4.png' alt='Banner for this technique.'/>
+      </section>
+      <section className='Container'>
+        <h1>{tech.name}</h1>
+        <p>{tech.description}</p>
+        <video autoplay="autoplay" loop muted className='Tech-Tutorial' alt='Tutorial gif for this technique.'>
+          <source src={tech.tutorial_url} type='video/mp4'/>
+        </video>
+      </section>
+    </div>
   )
 }
 

@@ -14,7 +14,7 @@ function Level(props) {
   const steps = level['steps'];
   return (
     <section className='Container'>
-      <img src={level.banner_url} alt='Level banner'/>
+      <img className='Banner' src={level.banner_url} alt='Level banner'/>
       <h1>{level.name}</h1>
       <h3>Required Techniques:</h3>
       <ul>
@@ -29,11 +29,13 @@ function Level(props) {
         steps.map((step, index) => {
           console.log(step.image_url);
           const visibility = step.image_url !== null ? 'block' : 'none';
+          const has_tech = step.tech === 'none' ? 'none' : 'block';
           return (
             <div key={index}>
               <h3> Step {index + 1}.</h3>
               <p> {step.description}</p>
-              <img style={{display: visibility}} src={step.image_url} alt='Visual portrayal of the description'/>
+              <img className='Step-Image' style={{display: visibility}} src={step.image_url} alt='Visual portrayal of the description'/>
+              <Link className='Image-Subtext Link' style={{display: has_tech}} exact to={step.tech}>Click me for a tutorial!</Link>
             </div>
           )
         })

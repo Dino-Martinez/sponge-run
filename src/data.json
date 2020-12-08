@@ -3,19 +3,21 @@
     {
       "name": "Jellyfish Fields",
       "url": "jellyfish-fields",
-      "banner_url": "https://via.placeholder.com/500x250",
+      "banner_url": "https://i.imgur.com/ic7tl26.jpeg",
       "techs": [
-        {"name": "Patrick Skip", "url": "patrick-skip"},
-        {"id": "yeehaw-texas", "name": "YeeHaw Texas", "url": "yeehaw-texas"}
+        {"name": "Tiki Jump", "url": "tiki-jump"},
+        {"name": "Patrick Skip", "url": "patrick-skip"}
       ],
       "steps": [
         {
           "description": "Move to the far right side of the rock to the right of the bridge.",
-          "image_url": "https://via.placeholder.com/350x200"
+          "image_url": "https://i.imgur.com/VimAoUa.png",
+          "tech": "none"
         },
         {
-          "description": "Jump onto the tikis, then do a swing-jump onto the rock formation.",
-          "image_url": "https://via.placeholder.com/350x200"
+          "description": "Jump onto the tikis, then do a swing-jump onto the rock formation. Be sure to wait until the tiki floats upward.",
+          "image_url": "https://i.imgur.com/EfJ5eO4.png",
+          "tech": "/techs/tiki-jump"
         }
       ]
     },
@@ -24,22 +26,30 @@
       "url": "downtown",
       "banner_url": "https://via.placeholder.com/350x250",
       "techs": [
-        {"name": "Patrick Skip", "url": "patrick-skip"},
-        {"name": "YeeHaw Texas", "url": "yeehaw-texas"}
+        {"name": "Corner Pound", "url": "corner-pound"}
       ],
       "steps": [
         {
-          "description": "Move to the far right side of the rock to the right of the bridge.",
-          "image_url": "https://via.placeholder.com/350x200"
+          "description": "Activate all the buttons by ground pounding on the corners. This allows you to miss the tiki hitbox.",
+          "image_url": "https://via.placeholder.com/350x200",
+          "tech": "corner-pound"
         },
         {
-          "description": "Jump onto the tikis, then do a swing-jump onto the rock formation.",
-          "image_url": "https://via.placeholder.com/350x200"
+          "description": "Move behind the barrel building and jump to the muffler building.",
+          "image_url": "https://via.placeholder.com/350x200",
+          "tech": "none"
         }
       ]
     }
   ],
   "techs": [
+    {
+      "name": "Tiki Jump",
+      "url": "tiki-jump",
+      "description": "Jump onto the tikis, then perform a swing jump to the rock formation. Then follow the rocks and jump over to Gary.",
+      "banner_url": "https://i.imgur.com/EfJ5eO4.png",
+      "tutorial_url": "https://media.gifyourgame.com/NoviceLatedLouie_720p.mp4"
+    },
     {
       "name": "Patrick Skip",
       "url": "patrick-skip",
@@ -51,6 +61,13 @@
       "name": "YeeHaw Texas",
       "url": "yeehaw-texas",
       "description": "Ride 'Em Cowboy!",
+      "banner_url": "https://via.placeholder.com/500x300",
+      "tutorial_url": "https://via.placeholder.com/350x200"
+    },
+    {
+      "name": "Corner Pound",
+      "url": "corner-pound",
+      "description": "By ground pounding on the corner of the button block, you can activate it while missing the tiki hitbox.",
       "banner_url": "https://via.placeholder.com/500x300",
       "tutorial_url": "https://via.placeholder.com/350x200"
     }

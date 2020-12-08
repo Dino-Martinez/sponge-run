@@ -19,6 +19,21 @@ body {
   color: var(--theme-main-text);
 }
 
+.Hero {
+  width:100%;
+  margin:0;
+  padding:0;
+  position:relative;
+}
+.Banner {
+  width:100%;
+}
+.Step-Image {
+  width: 650px;
+}
+.Tech-Tutorial {
+  width: 650px;
+}
 .Container {
   width: var(--container-width);
   margin-left: var(--container-margin-x);
@@ -26,7 +41,9 @@ body {
   margin-top: var(--container-margin-y);
   margin-bottom: var(--container-margin-y);
 }
-
+.Image-Subtext {
+  filter:grayscale(50%);
+}
 .Nav-Link {
   text-decoration: none;
   color: var(--theme-nav-text);
