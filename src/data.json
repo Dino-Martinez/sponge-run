@@ -1,12 +1,22 @@
 {
-  "levels":[
+  "levels": [
     {
       "name": "Jellyfish Fields",
       "url": "jellyfish-fields",
       "banner_url": "https://via.placeholder.com/500x250",
       "techs": [
         {"name": "Patrick Skip", "url": "patrick-skip"},
-        {"name": "Other Tech", "url": "none"}
+        {"id": "yeehaw-texas", "name": "YeeHaw Texas", "url": "yeehaw-texas"}
+      ],
+      "steps": [
+        {
+          "description": "Move to the far right side of the rock to the right of the bridge.",
+          "image_url": "https://via.placeholder.com/350x200"
+        },
+        {
+          "description": "Jump onto the tikis, then do a swing-jump onto the rock formation.",
+          "image_url": "https://via.placeholder.com/350x200"
+        }
       ]
     },
     {
@@ -15,8 +25,32 @@
       "banner_url": "https://via.placeholder.com/350x250",
       "techs": [
         {"name": "Patrick Skip", "url": "patrick-skip"},
-        {"name": "Other Tech", "url": "none"}
+        {"name": "YeeHaw Texas", "url": "yeehaw-texas"}
+      ],
+      "steps": [
+        {
+          "description": "Move to the far right side of the rock to the right of the bridge.",
+          "image_url": "https://via.placeholder.com/350x200"
+        },
+        {
+          "description": "Jump onto the tikis, then do a swing-jump onto the rock formation.",
+          "image_url": "https://via.placeholder.com/350x200"
+        }
       ]
+    }
+  ],
+  "techs": [
+    {
+      "name": "Patrick Skip",
+      "url": "patrick-skip",
+      "description": "Jump to the second platform straight ahead of the checkpoint, then perform a max distance jump to reach Patrick without fighting those pesky robots!",
+      "image_url": "https://via.placeholder.com/350x200"
+    },
+    {
+      "name": "YeeHaw Texas",
+      "url": "yeehaw-texas",
+      "description": "Ride 'Em Cowboy!",
+      "image_url": "https://via.placeholder.com/350x200"
     }
   ]
 }
