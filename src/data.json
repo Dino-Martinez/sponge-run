@@ -44,13 +44,15 @@
       "name": "Patrick Skip",
       "url": "patrick-skip",
       "description": "Jump to the second platform straight ahead of the checkpoint, then perform a max distance jump to reach Patrick without fighting those pesky robots!",
-      "image_url": "https://via.placeholder.com/350x200"
+      "banner_url": "https://via.placeholder.com/500x300",
+      "tutorial_url": "https://via.placeholder.com/350x200"
     },
     {
       "name": "YeeHaw Texas",
       "url": "yeehaw-texas",
       "description": "Ride 'Em Cowboy!",
-      "image_url": "https://via.placeholder.com/350x200"
+      "banner_url": "https://via.placeholder.com/500x300",
+      "tutorial_url": "https://via.placeholder.com/350x200"
     }
   ]
 }

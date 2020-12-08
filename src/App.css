@@ -4,6 +4,8 @@
   --theme-nav-active: #fff;
   --theme-main-background: #F7FFFE;
   --theme-main-text: #333;
+  --theme-link-text: #00B8BC;
+  --theme-link-hover: #006769;
   --template-padding-x: 24px;
   --template-padding-y: 24px;
   --container-width: 75%;
@@ -28,12 +30,18 @@ body {
   text-decoration: none;
   color: var(--theme-nav-text);
 }
-
 .Nav-Link:hover {
   color: var(--theme-nav-active);
 }
-
 .Nav-Link-active {
   font-weight: bold;
   color:var(--theme-nav-active);
+}
+
+.Link {
+  text-decoration: none;
+  color: var(--theme-link-text);
+}
+.Link:hover {
+  color:var(--theme-link-hover);
 }

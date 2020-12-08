@@ -9,7 +9,7 @@ function LevelList() {
         {
           all_levels.map((level, index) => {
             const url = `/levels/${level.url}`;
-            return <li key={index} ><Link className="router-link" to={url}>{level.name}</Link></li>
+            return <li key={index} ><Link className="Link" to={url}>{level.name}</Link></li>
           })
         }
       </ul>
