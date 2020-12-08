@@ -1,6 +1,22 @@
 {
   "levels":[
-    {"name": "Jellyfish Fields", "url": "jellyfish-fields"},
-    {"name": "Downtown Bikini Bottom", "url": "downtown"}
+    {
+      "name": "Jellyfish Fields",
+      "url": "jellyfish-fields",
+      "banner_url": "https://via.placeholder.com/500x250",
+      "techs": [
+        {"name": "Patrick Skip", "url": "patrick-skip"},
+        {"name": "Other Tech", "url": "none"}
+      ]
+    },
+    {
+      "name": "Downtown Bikini Bottom",
+      "url": "downtown",
+      "banner_url": "https://via.placeholder.com/350x250",
+      "techs": [
+        {"name": "Patrick Skip", "url": "patrick-skip"},
+        {"name": "Other Tech", "url": "none"}
+      ]
+    }
   ]
 }
