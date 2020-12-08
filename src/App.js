@@ -6,7 +6,8 @@ import Footer from './Footer.js';
 import Header from './Header.js';
 import Blank from './Blank.js';
 import HomePage from './HomePage.js';
-import LevelList from './LevelList.js'
+import LevelList from './LevelList.js';
+import Level from './Level.js'
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <Header />
       <div className='App'>
         <Route exact path='/' component={HomePage}/>
-        <Route path='/levels' component={LevelList}/>
+        <Route exact path='/levels' component={LevelList}/>
+        <Route path='/levels/:level_url_extension' component={Level}/>
       </div>
       <Footer />
     </Router>

@@ -1,10 +1,8 @@
 //import 'LevelList.css'
 import {Link} from 'react-router-dom';
+const json_data = require('./data.json');
 function LevelList() {
-  let all_levels = [
-    {name:"Jellyfish Fields", url:'jellyfish-fields'},
-    {name:"Downtown Bikini Bottom", url:'downtown'}
-  ];
+  let all_levels = json_data['levels'];
   return (
     <section id='level-list' className='Level-List'>
       <ul>
