@@ -1,0 +1,8 @@
+.Header {
+  padding-top: var(--template-padding-y);
+  padding-bottom: var(--template-padding-y);
+  padding-left: var(--template-padding-x);
+  padding-right: var(--template-padding-x);
+  background: var(--theme-nav-background);
+  color: var(--theme-nav-text);
+}

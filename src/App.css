@@ -1,3 +1,28 @@
+:root {
+  --theme-nav-background: #333;
+  --theme-nav-text: #ddd;
+  --theme-main-background: #F7FFFE;
+  --theme-main-text: #333;
+  --template-padding-x: 24px;
+  --template-padding-y: 24px;
+  --container-width: 75%;
+  --container-margin-x: auto;
+  --container-margin-y: 48px;
+}
+
+body {
+  background: var(--theme-main-background);
+  color: var(--theme-main-text);
+}
+
+.Container {
+  width: var(--container-width);
+  margin-left: var(--container-margin-x);
+  margin-right: var(--container-margin-x);
+  margin-top: var(--container-margin-y);
+  margin-bottom: var(--container-margin-y);
+}
+
 .App {
   text-align: center;
 }
