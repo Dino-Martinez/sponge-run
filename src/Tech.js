@@ -12,7 +12,7 @@ function Tech(props) {
   return (
     <div>
       <section class='Container'>
-        <img class='Banner' src='https://i.imgur.com/EfJ5eO4.png' alt='Banner for this technique.'/>
+        <img class='Banner' src={tech.banner_url} alt='Banner for this technique.'/>
       </section>
       <section className='Container'>
         <h1>{tech.name}</h1>
