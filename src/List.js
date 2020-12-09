@@ -1,28 +1,34 @@
-import {Link} from 'react-router-dom';
-const json_data = require('./data.json');
+import { Link } from 'react-router-dom';
+import React from 'react';
+
+const jsonData = require('./data.json');
 
 function List(props) {
-  const { list_type } = props.match.params;
-  let all_items = json_data[list_type];
+  const { match: { params: { listType } } } = props;
+  const allItems = jsonData[listType];
   let title = '';
-  if (list_type === 'techs') {
+  if (listType === 'techs') {
     title = 'Techniques';
-  } else if (list_type === 'levels') {
+  } else if (listType === 'levels') {
     title = 'Levels';
   }
   return (
-    <section id={list_type} className='List Container'>
-      <h1>All {title}:</h1>
+    <section id={listType} className="List Container">
+      <h1>
+        All
+        {title}
+        :
+      </h1>
       <ul>
         {
-          all_items.map((item, index) => {
-            const url = `/${list_type}/${item.url}`;
-            return <li key={index} ><Link className="Link" to={url}>{item.name}</Link></li>
+          allItems.map((item) => {
+            const url = `/${listType}/${item.url}`;
+            return <li key={item.url}><Link className="Link" to={url}>{item.name}</Link></li>;
           })
         }
       </ul>
     </section>
-  )
+  );
 }
 
 export default List;
