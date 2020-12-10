@@ -43,7 +43,10 @@ class Leaderboard extends React.Component {
               }
             </ul>
           )}
-          <p>This data was loaded from the API provided by <a href='https://speedrun.com'>Speedrun.com</a></p>
+        <p>
+          This data was loaded from the API provided by
+          <a href="https://speedrun.com">Speedrun.com</a>
+        </p>
       </section>
     );
   }
