@@ -12,5 +12,7 @@ This project was created using react
 * Build pages for tech -- DONE
 * Add photo content -- SORTA DONE
 * Add informative text to all pages -- SORTA DONE
+* Make the leaderboard page more professional and pretty
+* Display more detailed information on the leaderboard page
 * Style the existing pages a bit more
 * Add next and previous to all levels pages
