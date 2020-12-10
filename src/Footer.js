@@ -1,5 +1,6 @@
 import './Footer.css';
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   const [count, setCount] = useState(0);
@@ -21,6 +22,7 @@ function Footer() {
         </button>
       </div>
       <input type="number" onChange={(e) => setCount(e.target.value)} value={count} />
+      <Link className="Link" to="/leaderboard/a">Check out the top runs!</Link>
     </div>
   );
 }

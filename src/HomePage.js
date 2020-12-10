@@ -5,10 +5,8 @@ import { Link } from 'react-router-dom';
 function HomePage() {
   return (
     <div>
-      <section className="Hero">
-        <img className="Banner" src="https://i.imgur.com/k9r5LDN.png" alt="Game banner." />
-      </section>
       <section id="intro" className="Container">
+        <img className="Banner" src="https://i.imgur.com/k9r5LDN.png" alt="Game banner." />
         <h1>Welcome to SpongeRun!</h1>
         <p>
           We hope to offer a comprehensive guide on speed running

@@ -7,6 +7,7 @@ import HomePage from './HomePage';
 import Level from './Level';
 import Tech from './Tech';
 import List from './List';
+import Leaderboard from './Leaderboard';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <div className="App">
         <Route exact path="/" component={HomePage} />
         <Route path="/levels/:levelUrlExtension" component={Level} />
+        <Route path="/leaderboard/:query" component={Leaderboard} />
         <Route exact path="/:listType" component={List} />
         <Route path="/techs/:techUrlExtension" component={Tech} />
       </div>

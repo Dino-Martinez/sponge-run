@@ -3,6 +3,7 @@
   --theme-nav-text: #ddd;
   --theme-nav-active: #fff;
   --theme-main-background: #F7FFFE;
+  --theme-main-background-gradient: #dcf2f0;
   --theme-main-text: #333;
   --theme-link-text: #00B8BC;
   --theme-link-hover: #006769;
@@ -15,7 +16,7 @@
 }
 
 body {
-  background: var(--theme-main-background);
+  background: radial-gradient(var(--theme-main-background) 25%, var(--theme-main-background-gradient));
   color: var(--theme-main-text);
 }
 
