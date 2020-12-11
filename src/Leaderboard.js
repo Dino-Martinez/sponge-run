@@ -1,5 +1,5 @@
 import React from 'react';
-import jQuery from 'jquery';
+import './Leaderboard.css';
 
 class Leaderboard extends React.Component {
   constructor() {
@@ -7,19 +7,35 @@ class Leaderboard extends React.Component {
     this.state = {
       loaded: false,
       runs: {},
+      users: [],
     };
   }
 
-  async componentDidMount() {
-    const jsonData = await jQuery.getJSON('https://www.speedrun.com/api/v1/leaderboards/yd4ojjg1/category/zd3xvw8d?top=3', (json) => json.data.runs);
+  componentDidMount() {
+    this.retrieveData();
+  }
+
+  async retrieveData() {
+    // await all data results
+    const res = await fetch('https://www.speedrun.com/api/v1/leaderboards/yd4ojjg1/category/zd3xvw8d?top=3');
+    const json = await res.json();
+    const { runs } = json.data;
+    const users = await Promise.all(runs.map(async (data) => {
+      const userRes = await fetch(data.run.players[0].uri);
+      const user = await userRes.json();
+      return user;
+    }));
+
+    // once results are resolved, set state
     this.setState({
       loaded: true,
-      runs: jsonData.data.runs,
+      runs,
+      users,
     });
   }
 
   render() {
-    const { runs, loaded } = this.state;
+    const { runs, users, loaded } = this.state;
     return (
       <section className="Container">
         <h1>
@@ -27,16 +43,25 @@ class Leaderboard extends React.Component {
         </h1>
         {loaded
           && (
-            <ul>
+            <ul className="Leaderboard">
+              <li className="Run">
+                <p>Place</p>
+                <p>Name</p>
+                <p>Run Time</p>
+                <p>Date</p>
+                <p>Link</p>
+              </li>
               {
-                runs.map((data) => {
+                runs.map((data, index) => {
                   const { place, run } = data;
 
                   return (
-                    <li key={place}>
+                    <li className="Run" key={place}>
                       <p>{place}</p>
-                      <p>{run.date}</p>
+                      <p>{users[index].data.names.international}</p>
                       <p>{run.times.primary_t}</p>
+                      <p>{run.date}</p>
+                      <a className="Link" href={run.weblink}>To Speedrun.com</a>
                     </li>
                   );
                 })
@@ -45,7 +70,7 @@ class Leaderboard extends React.Component {
           )}
         <p>
           This data was loaded from the API provided by
-          <a href="https://speedrun.com">Speedrun.com</a>
+          <a className="Link" href="https://speedrun.com"> Speedrun.com</a>
         </p>
       </section>
     );

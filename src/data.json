@@ -5,8 +5,7 @@
       "url": "jellyfish-fields",
       "banner_url": "https://i.imgur.com/ic7tl26.jpeg",
       "techs": [
-        {"name": "Tiki Jump", "url": "tiki-jump"},
-        {"name": "Patrick Skip", "url": "patrick-skip"}
+        {"name": "Tiki Jump", "url": "tiki-jump"}
       ],
       "steps": [
         {
@@ -24,19 +23,19 @@
     {
       "name": "Downtown Bikini Bottom",
       "url": "downtown",
-      "banner_url": "https://via.placeholder.com/350x250",
+      "banner_url": "https://i.imgur.com/UMvIa9r.png",
       "techs": [
         {"name": "Corner Pound", "url": "corner-pound"}
       ],
       "steps": [
         {
           "description": "Activate all the buttons by ground pounding on the corners. This allows you to miss the tiki hitbox.",
-          "image_url": "https://via.placeholder.com/350x200",
-          "tech": "corner-pound"
+          "image_url": "https://i.imgur.com/gDg1lE0.png",
+          "tech": "/techs/corner-pound"
         },
         {
           "description": "Move behind the barrel building and jump to the muffler building.",
-          "image_url": "https://via.placeholder.com/350x200",
+          "image_url": "https://i.imgur.com/obJdWQ3.png",
           "tech": "none"
         }
       ]
@@ -51,25 +50,11 @@
       "tutorial_url": "https://media.gifyourgame.com/NoviceLatedLouie_720p.mp4"
     },
     {
-      "name": "Patrick Skip",
-      "url": "patrick-skip",
-      "description": "Jump to the second platform straight ahead of the checkpoint, then perform a max distance jump to reach Patrick without fighting those pesky robots!",
-      "banner_url": "https://via.placeholder.com/500x300",
-      "tutorial_url": "https://via.placeholder.com/350x200"
-    },
-    {
-      "name": "YeeHaw Texas",
-      "url": "yeehaw-texas",
-      "description": "Ride 'Em Cowboy!",
-      "banner_url": "https://via.placeholder.com/500x300",
-      "tutorial_url": "https://via.placeholder.com/350x200"
-    },
-    {
       "name": "Corner Pound",
       "url": "corner-pound",
       "description": "By ground pounding on the corner of the button block, you can activate it while missing the tiki hitbox.",
-      "banner_url": "https://via.placeholder.com/500x300",
-      "tutorial_url": "https://via.placeholder.com/350x200"
+      "banner_url": "https://i.imgur.com/gDg1lE0.png",
+      "tutorial_url": "https://i.imgur.com/vVL0cUN.mp4"
     }
   ]
 }
