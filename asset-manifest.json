@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sponge-run/static/css/main.62831687.chunk.css",
+    "main.css": "/sponge-run/static/css/main.89bdaef5.chunk.css",
     "main.js": "/sponge-run/static/js/main.0c9a511a.chunk.js",
     "main.js.map": "/sponge-run/static/js/main.0c9a511a.chunk.js.map",
     "runtime-main.js": "/sponge-run/static/js/runtime-main.ebc1c89a.js",
@@ -10,13 +10,13 @@
     "static/js/3.6872afba.chunk.js": "/sponge-run/static/js/3.6872afba.chunk.js",
     "static/js/3.6872afba.chunk.js.map": "/sponge-run/static/js/3.6872afba.chunk.js.map",
     "index.html": "/sponge-run/index.html",
-    "static/css/main.62831687.chunk.css.map": "/sponge-run/static/css/main.62831687.chunk.css.map",
+    "static/css/main.89bdaef5.chunk.css.map": "/sponge-run/static/css/main.89bdaef5.chunk.css.map",
     "static/js/2.8e899af1.chunk.js.LICENSE.txt": "/sponge-run/static/js/2.8e899af1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ebc1c89a.js",
     "static/js/2.8e899af1.chunk.js",
-    "static/css/main.62831687.chunk.css",
+    "static/css/main.89bdaef5.chunk.css",
     "static/js/main.0c9a511a.chunk.js"
   ]
 }
