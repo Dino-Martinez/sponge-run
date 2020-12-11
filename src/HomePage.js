@@ -13,7 +13,7 @@ function HomePage() {
           SpongeBob SquarePants: Battle for Bikini Bottom - Rehydrated!
           Please note that you should complete the game normally before attempting this!
           To start from the beginning
-          <Link className="Link" to="/levels/jellyfish-fields">click here!</Link>
+          <Link className="Link" to="/levels/jellyfish-fields"> click here!</Link>
         </p>
       </section>
 
