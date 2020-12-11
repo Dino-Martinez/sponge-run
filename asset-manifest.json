@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/sponge-run/static/css/main.89bdaef5.chunk.css",
-    "main.js": "/sponge-run/static/js/main.0c9a511a.chunk.js",
-    "main.js.map": "/sponge-run/static/js/main.0c9a511a.chunk.js.map",
+    "main.js": "/sponge-run/static/js/main.710f7a8d.chunk.js",
+    "main.js.map": "/sponge-run/static/js/main.710f7a8d.chunk.js.map",
     "runtime-main.js": "/sponge-run/static/js/runtime-main.ebc1c89a.js",
     "runtime-main.js.map": "/sponge-run/static/js/runtime-main.ebc1c89a.js.map",
     "static/js/2.8e899af1.chunk.js": "/sponge-run/static/js/2.8e899af1.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.ebc1c89a.js",
     "static/js/2.8e899af1.chunk.js",
     "static/css/main.89bdaef5.chunk.css",
-    "static/js/main.0c9a511a.chunk.js"
+    "static/js/main.710f7a8d.chunk.js"
   ]
 }
